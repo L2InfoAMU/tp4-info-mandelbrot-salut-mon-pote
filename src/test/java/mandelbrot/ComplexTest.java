@@ -162,7 +162,14 @@ public class ComplexTest {
     void testComplexMultiply() {
         Complex c1 = new Complex(real,imaginary);
         Complex c2 = new Complex(real,imaginary);
-        Complex c3 = new Complex(real*real,imaginary*imaginary);
+        Complex c3 = new Complex(real*real - imaginary * imaginary , real * imaginary + imaginary * real);
         assertEquals(c3,c1.multiply(c2));
     }
+    @Test
+    void testComplexSquaredModulus(){
+        Complex c1 = new Complex(4,5);
+        assertEquals(41,c1.squaredModulus());
+    }
+
+
 }
