@@ -177,4 +177,11 @@ public class ComplexTest {
         assertEquals(Math.sqrt(5),c1.modulus());
     }
 
+    @Test
+    void testComplexPow()
+    { Complex c1 = new Complex(2,3);
+
+
+    }
+
 }
