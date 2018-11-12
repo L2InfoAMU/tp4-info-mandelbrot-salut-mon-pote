@@ -149,4 +149,20 @@ public class ComplexTest {
         Complex c3 = new Complex(real+real,imaginary+imaginary);
         assertEquals(c3,c1.add(c2));
     }
+
+    @Test
+    void testComplexSubtract() {
+        Complex c1 = new Complex(real,imaginary);
+        Complex c2 = new Complex(real,imaginary);
+        Complex c3 = new Complex(real-real,imaginary-imaginary);
+        assertEquals(c3,c1.subtract(c2));
+    }
+
+    @Test
+    void testComplexMultiply() {
+        Complex c1 = new Complex(real,imaginary);
+        Complex c2 = new Complex(real,imaginary);
+        Complex c3 = new Complex(real*real,imaginary*imaginary);
+        assertEquals(c3,c1.multiply(c2));
+    }
 }
