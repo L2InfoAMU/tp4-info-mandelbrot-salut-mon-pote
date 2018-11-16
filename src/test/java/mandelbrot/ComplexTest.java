@@ -184,4 +184,12 @@ public class ComplexTest {
         Complex c2 = new Complex(5,12);
         assertEquals(c2,c1.pow(2));
     }
+
+    @Test
+    void testComplexScale()
+    {
+        Complex c1 = new Complex(4,2);
+        Complex c2 = new Complex(10,5);
+        assertEquals(c2,c1.scale(2.5));
+    }
 }
