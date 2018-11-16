@@ -179,9 +179,9 @@ public class ComplexTest {
 
     @Test
     void testComplexPow()
-    { Complex c1 = new Complex(2,3);
-
-
+    {
+        Complex c1 = new Complex(3, 2);
+        Complex c2 = new Complex(5,12);
+        assertEquals(c2,c1.pow(2));
     }
-
 }
