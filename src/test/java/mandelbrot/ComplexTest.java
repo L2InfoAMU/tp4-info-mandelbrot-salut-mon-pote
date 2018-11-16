@@ -192,4 +192,13 @@ public class ComplexTest {
         Complex c2 = new Complex(10,5);
         assertEquals(c2,c1.scale(2.5));
     }
+
+    @Test
+    void testComplexEquals()
+    {
+        Complex c1 = new Complex(1,1);
+        Complex c2 = new Complex(4,2);
+        assertEquals(Complex.ONE.equals(c1),true);
+        assertEquals(Complex.ONE.equals(c2),false);
+    }
 }
